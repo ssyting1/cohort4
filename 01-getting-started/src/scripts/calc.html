@@ -6,35 +6,36 @@
     <title>My Calculator</title>
 <script src = "calc.js">
 </script>
-<style>
+<style type = "text/css">
     *{
-        margin: 100;
-        padding: 100;
+        margin: 0;
+        padding: 0;
     }
     .button{
         width: 50px;
         height: 50px;
         font-size: 25px;
-        color:blanchedalmond;
+        color: blanchedalmond;
         margin: 2px;
-        border:none;
-        border-radius:3px;
+        border: none;
+        border-radius: 3px;
         background: #a382ad;
-        cursor:pointer;
+        cursor: pointer;
     }
-    .textview{
-        width: 214px;
+    .number{
+        width: 208px;
         margin: 5px;
         font-size: 25px;
         padding: 5px;
-        border:none;
-        border-radius:3px;
+        border: none;
+        border-radius: 3px;
     }
     .main{
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
+        background:#7e326d;
     }
     body{
         background:#544e61;
@@ -44,7 +45,7 @@
 <body>
     <div class="main">
         <form name="form">
-            <input class="textview" name="textview">
+            <input class="number" name="number">
         </form>
         <table>
             <tr>

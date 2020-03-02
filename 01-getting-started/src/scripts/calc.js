@@ -1,16 +1,16 @@
 function insert(num) {
-    document.form.textview.value = document.form.textview.value+num;
+    document.form.number.value = document.form.number.value+num;
 }
 function equal(){
-    var exp = document.form.textview.value;
+    var exp = document.form.number.value;
     if(exp){
-    document.form.textview.value=eval(exp);
+    document.form.number.value=eval(exp);
     }
 }
 function clean(){
-    document.form.textview.value="";
+    document.form.number.value="";
 }
 function back(){
-    var exp=document.form.textview.value;
-    document.form.textview.value = exp.substring(0, exp.length-1);
+    var exp=document.form.number.value;
+    document.form.number.value = exp.substring(0, exp.length-1);
 }
