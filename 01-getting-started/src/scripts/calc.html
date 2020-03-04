@@ -22,6 +22,17 @@
         background: #a382ad;
         cursor: pointer;
     }
+    .TaxCalc{
+        width: 110px;
+        height: 50px;
+        font-size: 25px;
+        color: blanchedalmond;
+        margin: 2px;
+        border: none;
+        border-radius: 3px;
+        background: #a382ad;
+        cursor: pointer;
+    }
     .number{
         width: 208px;
         margin: 5px;
@@ -35,15 +46,16 @@
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
-        background:#7e326d;
+        /* background:#7e326d; */
     }
     body{
-        background:#544e61;
+        background:#6b6a6e;
         }
 </style>
 </head>
 <body>
     <div class="main">
+    <h1>My Calculator</h1>
         <form name="form">
             <input class="number" name="number">
         </form>
@@ -78,6 +90,16 @@
             </tr>
         </table>
 
-    </div>
+   
+    <br>
+    <h1>Canadian Taxes</h1> 
+    <h3>Enter taxable income:</h3>
+    <input class = "number" id = "income">
+    <br>
+    <input class = "TaxCalc" type="button" value = "Calculate" name = "calculate" id = "calculate">
+    <br>
+    <h3>Income tax owed:</h3>
+    <input class = "number" id = "tax">
+</div>
 </body>
 </html>
