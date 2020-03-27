@@ -1,6 +1,6 @@
 
 const functions = {
-    
+
     // size: (num) => {
     //     if (num < -10) return "extra large";
     //     if (num < 10) return "small";
@@ -19,34 +19,50 @@ const functions = {
     // isEven: (num) => {
     //     return false
     // },
+    
+// 100D Competencies - working with Arrays
 
-// 100D Competencies
-
-    arrayAdd(arr1,x) {
-    // var x;
-    var arr1 = [];
-    arr1.push(Number(x)); 
-    // console.log (arr1);
-    if(isNaN(x)){
-    return (`${arr1} is not a valid number`)}
+    arrAdd(arr, num) {
+    if(isNaN(num)){
+    return (`${num} is not a valid number`)}
     else 
-    {
-    // arr1.push(x);
-    return (`${arr1} added to the Array`)}
+    {arr.push(Number(num));
+    return (`${num} added to the Array`)}
+    },
+    arrShow(arr) {
+        return arr;
+    },
+    arrTotal(arr) {
+        let total = 0;
+        for(let i = 0; i < arr.length; i++) {
+            total += arr[i];
+        }
+        return total;
+    },
+    arrClear(arr){
+        arr.length = 0;
+    },
+
+// 100D Competencies - working with dictionaries
+
+caps : {
+    'AB' : "Edmonton",	
+    'MB' : "Winnipeg",	
+    'NB' : "Fredericton",
+    'NL' : "St. John's",
+    'NS' : "Halifax",	
+    'ON' : "Toronto",	
+    'PE' : "Charlottetown",	
+    'QC' : "Quebec City",	
+    'SK' : "Regina",
+    'YT' : "Whitehorse",	
+    'NU' : "Iqaluit",	
+    'NT' : "Yellowknife",
 },
 
-    // arrayShow(){
-    // var arr = [];
-    // var x = arr.toString();
-//     return arr1;
-// },
-//     array.forEach(function (item, index) {
-//     console.log(item, index);
-//   });
-// },
-    // arrayClear() {
-    //     document.form.number.value="";
-    // }
+    getCapital(code) {
+    return functions.caps[code];
+},
 
 };
 

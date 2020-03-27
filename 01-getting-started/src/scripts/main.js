@@ -17,18 +17,25 @@ import functions from './functions.js';
 // idNumberSize.textContent = functions.size(idNumber.value);
 // }));
 
-document.getElementById("arrAdd").addEventListener("click", function() {
-    arrText.textContent = functions.arrayAdd(inputArrayBox.value);
+// 100D Competencies - working with Arrays
+let arr = [];
+
+idArrAdd.addEventListener("click", e =>  {
+    arrText.textContent = functions.arrAdd(arr, inputArrayBox.value);
+  });
+  idArrShow.addEventListener("click", e =>  {
+    arrText.textContent = functions.arrShow(arr, inputArrayBox.value);
+  });
+  idArrTotal.addEventListener("click", e =>   {
+    arrText.textContent = functions.arrTotal(arr, inputArrayBox.value);
+  });
+  idArrClear.addEventListener("click", e =>   {
+    arrText.textContent = functions.arrClear(arr, inputArrayBox.value);
   });
 
-  document.getElementById("arrShow").addEventListener("click", function() {
-    arrText.textContent = functions.arrayShow(inputArrayBox.value);
-  });
+// 100D Competencies - working with dictionaries
+idDictLookup.addEventListener("click", e => {
+  dictText.textContent = functions.getCapital(inputDictBox.value);
+});
 
-//   document.getElementById("arrTotal").addEventListener("click", function() {
-//     arrText.textContent = functions.arrayTotal(inputArrayBox.value);
-//   });
 
-//   document.getElementById("arrClear").addEventListener("click", function() {
-//     arrText.textContent = functions.arrayClear(inputArrayBox.value);
-//   });

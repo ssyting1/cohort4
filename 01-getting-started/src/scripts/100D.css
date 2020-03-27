@@ -6,8 +6,8 @@
     border: 2px solid #a382ad;
     padding: 20px; 
     width: 400px;
-    height: 190px;  
-    font-size: 270%;
+    height: 160px;  
+    font-size: 210%;
     font-weight: bold;
     background-color: #5f5f6e;
   }
@@ -19,7 +19,9 @@ body{
     background:#6b6a6e;
 }
 .arrayBox{
-    display: inline-flex;
+    display: inline;
+    width:20%;
+    text-align: center;
     font-size: 25px;
     color: blanchedalmond;
     margin: 2px;
@@ -28,7 +30,26 @@ body{
     background: #a382ad;
     cursor: pointer;
 }
-
+.arrayBox1{
+    display: inline;
+    width:30%;
+    text-align: center;
+    font-size: 25px;
+    color: blanchedalmond;
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+    background: #a382ad;
+    cursor: pointer;
+}
+.number{
+    width: 208px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
 .messageArea{
     font-size: 100%;
 }

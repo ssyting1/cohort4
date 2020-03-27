@@ -1,32 +1,35 @@
 import functions from './functions'
 
-test('Check the sizes', () => {
-    expect(functions.size(-1)).toBe("small"); // Consider the edge cases
-    expect(functions.size(0)).toBe("small");
-    expect(functions.size(10)).toBe("medium");
-    expect(functions.size(15)).toBe("medium");
-    expect(functions.size(20)).toBe("large");
-    expect(functions.size(2000000)).toBe("large");
-    expect(functions.size(-101)).toBe("extra large");
-});
-
-test('Does that add function work?', () => {
-    expect(functions.add(1,2)).toBe(3);
-    expect(functions.add(101,202)).toBe(303);
-});
-
-test('Check the number', () => {
-    expect(functions.isEven(1)).toBe(false);
-});
-test("Check Array add", () => {
-    expect(functions.arrayAdd("1")).toEqual("1 added to the Array");
-    expect(functions.arrayAdd("text")).toEqual("text is not a valid number")
-});
-// test("Check Array show", () => {
-//     expect(functions.arrayShow()).toEqual("");
-
+// test('Check the sizes', () => {
+//     expect(functions.size(-1)).toBe("small"); // Consider the edge cases
+//     expect(functions.size(0)).toBe("small");
+//     expect(functions.size(10)).toBe("medium");
+//     expect(functions.size(15)).toBe("medium");
+//     expect(functions.size(20)).toBe("large");
+//     expect(functions.size(2000000)).toBe("large");
+//     expect(functions.size(-101)).toBe("extra large");
 // });
 
-// function newFunction() {
-//     expect(functions.arrayShow("100")).toEqual("");
-// }
+// 100D Competencies - Working wth Arrays
+
+test('Does the array add functions work?', () => {
+    const arr1 = functions.arrAdd([1,2],5);
+    expect(arr1.length).toBe(20);
+    expect(arr1[0]).toBe("5");
+
+    const arr2 = functions.arrAdd([3,4,5],7);
+    expect(arr2.length).toBe(20);
+    expect(arr2[0]).toBe("7");
+
+    // Making sure strings can't be added to array.
+    const arr3 = functions.arrAdd([],"M");
+    expect(arr3.length).toBe(23);
+    expect(arr3[0]).toBe("M");
+});
+
+// 100D Competencies - Working wth Dictionaries
+test('Does the lookup function work?', () => {
+    const cap = functions.getCapital('AB');
+    expect(cap).toBe("Edmonton");
+    expect(functions.getCapital('ON')).toBe("Toronto");
+});
