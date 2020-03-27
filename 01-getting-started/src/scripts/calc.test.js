@@ -1,8 +1,5 @@
-import calcTaxes  from './calc.js'
+import functions  from './calc.js'
 
-test("Check Tax", () => {
-    expect(calcTaxes(1)).toBe(0.15);
-    });
 
 
 

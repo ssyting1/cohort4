@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#rcorners{
+    border: 2px solid #a382ad;
+    padding: 20px; 
+    width: 400px;
+    height: 190px;  
+    font-size: 270%;
+    font-weight: bold;
+    background-color: #5f5f6e;
+  }
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-55%) translateY(-35%);
+    background:#6b6a6e;
+}
+.arrayBox{
+    display: inline-flex;
+    font-size: 25px;
+    color: blanchedalmond;
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+    background: #a382ad;
+    cursor: pointer;
+}
+
+.messageArea{
+    font-size: 100%;
+}

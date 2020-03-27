@@ -103,7 +103,7 @@ loops4() {
     var s = 2;
     do { 
     return(s + 5);
-    q++;}
+    s++;}
     while (s < 10)
 },
 // Loops(forEach)

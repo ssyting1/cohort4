@@ -4,54 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Calculator</title>
-<script src = "calc.js">
+<script src = "calc.js" type="text/javascript">
 </script>
-<style type = "text/css">
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    .button{
-        width: 50px;
-        height: 50px;
-        font-size: 25px;
-        color: blanchedalmond;
-        margin: 2px;
-        border: none;
-        border-radius: 3px;
-        background: #a382ad;
-        cursor: pointer;
-    }
-    .TaxCalc{
-        width: 110px;
-        height: 50px;
-        font-size: 25px;
-        color: blanchedalmond;
-        margin: 2px;
-        border: none;
-        border-radius: 3px;
-        background: #a382ad;
-        cursor: pointer;
-    }
-    .number{
-        width: 208px;
-        margin: 5px;
-        font-size: 25px;
-        padding: 5px;
-        border: none;
-        border-radius: 3px;
-    }
-    .main{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        /* background:#7e326d; */
-    }
-    body{
-        background:#6b6a6e;
-        }
-</style>
+<link rel="stylesheet" type="text/css" href="calc.css">
 </head>
 <body>
     <div class="main">
@@ -89,17 +44,19 @@
                 <td><input class="button" type="button" value="." onClick="insert('.')"></td>
             </tr>
         </table>
-
-   
     <br>
     <h1>Canadian Taxes</h1> 
     <h3>Enter taxable income:</h3>
     <input class = "number" id = "income">
     <br>
-    <input class = "TaxCalc" type="button" value = "Calculate" name = "calculate" id = "calculate">
+    <input class = "arrayBox" type="button" value = " Calculate " name = "calculate" id = "calculate"></button>
     <br>
-    <h3>Income tax owed:</h3>
-    <input class = "number" id = "tax">
+    <h3>Federal income tax owed:</h3>
+    <input class = "number" id = "ftax">
+    <!-- <h3>Provincial income tax owed:</h3>
+    <input class = "number" id = "ftax"> -->
+<br>
+<br>
 </div>
 </body>
 </html>
